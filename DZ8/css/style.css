@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.top {
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    min-height: 75px;
+    background: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.promo {
+    display: flex;
+    background: #F1E4E6;
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+}
+
+.promo_img {
+    width: 50%;
+}
+
+.promo_info {
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    margin-top: 80%;
+}
+
+.promo_title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    color: #222222;
+}
+
+.promo_heading {
+    display: flex;
+}
+.promo_heading_of_luxerious {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #222222;
+}
+
+.promo_fashion {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    padding-left: 7px;
+    color: #F16D7F;
+}
+
+.sale {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+
+.sale_item {
+    position: relative;
+}
+
+.sale_content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale_item_big {
+    min-height: 180px;
+    grid-column: 1/-1;
+}
+
+.sale_text {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.sale_heading {
+    font-weight: 700;
+    font-size: 24px;
+    color: #f16d7f;
+}
+
+.product_box_heading {
+    font-weight: 400;
+    font-size: 30px;
+    color: #222;
+    text-align: center;
+    line-height: 36px;
+}
+.product_box_text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #9f9f9f;
+    text-align: center;
+    line-height: 17px;
+}
+
+.product_box_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 столбца */
+    grid-template-rows: repeat(2, auto);  /* 2 строки */
+    gap: 30px; /* Отступы между карточками */
+    justify-items: center; /* Центровка карточек по горизонтали */
+    margin-top: 48px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9; /* Цвет фона карточки */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для карточки */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Анимация подъема */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product_content {
+    padding: 24px 16px;
+    display: grid;
+}
+
+.product_img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product_heading {
+    font-weight: 400;
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.product_text {
+    font-weight: 300;
+    font-size: 16px;
+    color: #5d5d5d;
+    margin-bottom: 10px;
+}
+
+.product_price {
+    font-weight: 400;
+    font-size: 16px;
+    color: #F16D7F;
+}
+
+/* Контейнер для центрирования */
+.product_button {
+    display: flex; /* Используем Flexbox */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    height: 100%; /* Высота контейнера равна высоте окна */
+}
+
+/* Стили для кнопки */
+.product_button_item {
+    width: 212px;
+    height: 48px;
+    text-align: center; /* Центровка текста внутри кнопки */
+    font-size: 16px;
+    color: #f26376; /* Цвет текста */
+    margin-top: 48px;
+    background-color: #ffffff; /* Фон кнопки */
+    border: 1px solid #f26376; /* Цвет и толщина границы */
+    border-radius: 0; /* Убираем скругления */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex; /* Включаем Flexbox для кнопки */
+    justify-content: center; /* Горизонтальное центрирование текста */
+    align-items: center; /* Вертикальное центрирование текста */
+}
+
+/* Эффект при наведении */
+.product_button_item:hover {
+    background-color: #f26376; /* Изменение цвета фона */
+    color: #ffffff; /* Изменение цвета текста */
+    transform: scale(1.05); /* Легкое увеличение кнопки */
+}
+
+/* Медиа-запрос для планшетных устройств (768px-1024px) */
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 480px);
+        padding-right: calc(50% - 480px);
+    }
+
+    .promo {
+        flex-direction: column;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .promo_img, .promo_info {
+        width: 100%;
+    }
+
+    .promo_info {
+        margin-top: 32px;
+    }
+
+    .sale {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .sale_item_big {
+        grid-column: 1;
+    }
+
+    .product_box_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .product {
+        padding: 16px;
+    }
+}
+
+/* Медиа-запрос для устройств до 768px */
+@media (max-width: 768px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 16px 0;
+        gap: 16px;
+    }
+
+    .header_left, .header_right {
+        gap: 16px;
+    }
+
+    .promo {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .promo_title {
+        font-size: 36px;
+    }
+
+    .promo_heading_of_luxerious, .promo_fashion {
+        font-size: 24px;
+    }
+
+    .sale {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .product_box_content {
+        grid-template-columns: 1fr;
+    }
+
+    .product {
+        padding: 12px;
+    }
+
+    .product_button {
+        margin-top: 24px;
+    }
+}
+
+
+/* Медиа-запрос для устройств до 768px */
+@media (max-width: 768px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 16px 0;
+        gap: 16px;
+    }
+
+    .header_left, .header_right {
+        gap: 16px;
+    }
+
+    .promo {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .promo_title {
+        font-size: 36px;
+    }
+
+    .promo_heading_of_luxerious, .promo_fashion {
+        font-size: 24px;
+    }
+
+    .sale {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .product_box_content {
+        grid-template-columns: 1fr;
+    }
+
+    .product {
+        padding: 12px;
+    }
+
+    .product_button {
+        margin-top: 24px;
+    }
+}
